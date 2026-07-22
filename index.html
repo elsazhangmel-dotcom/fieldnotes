@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elsa Zhang</title>
+    <meta
+      name="description"
+      content="Elsa Zhang writes about products, patterns, and small experiments."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem("elsa-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute(
+          "data-theme",
+          saved || (prefersDark ? "dark" : "light")
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="brand-group">
+        <a href="index.html">Elsa Zhang</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="about.html">About</a>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme"></button>
+      </div>
+    </nav>
+
+    <main class="wrap">
+      <p class="section-label">Latest</p>
+      <a class="latest-card" href="posts/a-walk-without-a-phone.html">
+        <h2>A walk without a phone</h2>
+        <p class="latest-meta">July 22, 2026 · 2 minute read</p>
+        <p class="latest-excerpt">
+          What changes when you leave the phone at home and walk for an hour.
+          <span class="more">Keep reading →</span>
+        </p>
+      </a>
+
+      <hr class="rule" />
+
+      <p class="section-label" id="writing">Writing</p>
+      <ul class="writing-list">
+        <li>
+          <a href="posts/a-new-day.html">
+            <span class="date">2026 · 07</span>
+            <span class="title">A new day</span>
+          </a>
+        </li>
+        <li>
+          <a href="posts/a-walk-without-a-phone.html">
+            <span class="date">2026 · 07</span>
+            <span class="title">A walk without a phone</span>
+          </a>
+        </li>
+        <li>
+          <a href="posts/defaults-are-decisions.html">
+            <span class="date">2026 · 07</span>
+            <span class="title">Defaults are decisions</span>
+          </a>
+        </li>
+        <li>
+          <a href="posts/on-slow-mornings.html">
+            <span class="date">2026 · 07</span>
+            <span class="title">On slow mornings</span>
+          </a>
+        </li>
+        <li>
+          <a href="posts/shipping-the-second-version.html">
+            <span class="date">2026 · 07</span>
+            <span class="title">Shipping the second version</span>
+          </a>
+        </li>
+        <li>
+          <a href="posts/one-note-a-day.html">
+            <span class="date">2026 · 07</span>
+            <span class="title">One note a day</span>
+          </a>
+        </li>
+        <li>
+          <a href="posts/welcome.html">
+            <span class="date">2026 · 07</span>
+            <span class="title">Starting points</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Elsa Zhang</title>
+    <meta name="description" content="About Elsa Zhang." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem("elsa-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute(
+          "data-theme",
+          saved || (prefersDark ? "dark" : "light")
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="brand-group">
+        <a href="index.html">Elsa Zhang</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="about.html" aria-current="page">About</a>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme"></button>
+      </div>
+    </nav>
+
+    <article class="wrap">
+      <h1>About me</h1>
+      <div class="prose">
+        <p>
+          I’m Elsa. I write about building products, noticing patterns, and running small
+          experiments. This site is a quiet place for that writing.
+        </p>
+        <p>
+          I’m interested in how thoughtful systems shape everyday behavior — and what happens when
+          you change one variable at a time.
+        </p>
+        <ul>
+          <li><a href="index.html#writing">Writing</a></li>
+        </ul>
+      </div>
+    </article>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

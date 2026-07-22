@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A new day</title>
+    <meta name="description" content="What changes when you leave the phone at home and walk for an hour." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem("elsa-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute(
+          "data-theme",
+          saved || (prefersDark ? "dark" : "light")
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="brand-group">
+        <a href="../index.html">Elsa Zhang</a>
+        <span class="sep">/</span>
+        <a class="writing-crumb" href="../index.html#writing">Writing</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="../about.html">About</a>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme"></button>
+      </div>
+    </nav>
+
+    <article class="wrap">
+      <h1>A new day</h1>
+      <p class="post-meta">July 22, 2026 · 2 minute read</p>
+      <div class="prose">
+        <p>
+          Maybe this is a new day. I left the phone on the kitchen table and walked for an hour. The first ten minutes felt
+          oddly incomplete, as if I had forgotten a necessary tool.
+        </p>
+        <p>
+          Then the incompleteness became the point. Without a camera, the trees stayed trees. Without
+          a map, the route became a series of choices instead of instructions.
+        </p>
+        <p>
+          I noticed the temperature change under the canopy. A dog barked two streets over. Someone
+          was practicing piano with the window open. None of it was content. All of it was life.
+        </p>
+        <h2>What came back</h2>
+        <p>
+          Ideas arrive differently when you are not harvesting them. They show up sideways, while you
+          are watching your shoes or waiting at a light. You remember them later, or you don’t — and
+          both outcomes are fine.
+        </p>
+        <blockquote>
+          <p>Attention is not a resource to optimize. It is a place to live.</p>
+        </blockquote>
+        <p>
+          I will not make a ritual out of phoneless walks. But I want more hours where nothing is
+          being captured, and something is still being kept.
+        </p>
+      </div>
+    </article>
+
+    <footer class="site-footer">
+      <a href="../index.html#writing">← Writing</a>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
