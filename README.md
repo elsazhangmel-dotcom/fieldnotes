@@ -1,6 +1,6 @@
 # Elsa Zhang
 
-Personal site inspired by [stephango.com](https://stephango.com), with Dario-style light/dark toggle.
+Personal site.
 
 ## Structure
 
