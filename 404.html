@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found — Elsa Zhang</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/fieldnotes/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/fieldnotes/css/styles.css" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem("elsa-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute(
+          "data-theme",
+          saved || (prefersDark ? "dark" : "light")
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="brand-group">
+        <a href="/fieldnotes/index.html">Elsa Zhang</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="/fieldnotes/about.html">About</a>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme"></button>
+      </div>
+    </nav>
+
+    <article class="wrap">
+      <h1>Page not found</h1>
+      <div class="prose">
+        <p>That page doesn’t exist, or it has moved.</p>
+        <ul>
+          <li><a href="/fieldnotes/index.html">Home</a></li>
+          <li><a href="/fieldnotes/index.html#writing">Writing</a></li>
+        </ul>
+      </div>
+    </article>
+
+    <script src="/fieldnotes/js/main.js"></script>
+  </body>
+</html>
