@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The need under the request — Elsa Zhang</title>
+    <meta name="description" content="A request for a document is rarely a request for words. Underneath it is usually the need to trust that something is real." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script>
+      (() => {
+        let saved = null;
+        try {
+          saved = localStorage.getItem("elsa-theme");
+        } catch {}
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute(
+          "data-theme",
+          saved || (prefersDark ? "dark" : "light")
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="brand-group">
+        <a href="../index.html">Elsa Zhang</a>
+        <span class="sep">/</span>
+        <a class="writing-crumb" href="../index.html#writing">Writing</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="../about.html">About</a>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme"></button>
+      </div>
+    </nav>
+
+    <article class="wrap">
+      <h1>The need under the request</h1>
+      <p class="post-meta">September 4, 2026 · 1 minute read</p>
+      <div class="prose">
+        <p>
+          Some requests are disguised as something smaller than they are.
+        </p>
+        <p>
+          A customer who asks for a document is rarely asking for words. What is wanted is something
+          closer to a promise made durable, some proof that the thing being described exists,
+          behaves as claimed, and will still behave that way next quarter, when the person’s own
+          reputation is riding on it having worked.
+        </p>
+        <p>
+          There is an old and useful habit, in mathematics, of asking not merely whether a statement
+          is true but whether it can be relied upon, whether the proof holds under the scrutiny a
+          stranger might bring to it.
+        </p>
+        <p>
+          Documents remain useful and are often exactly what is needed. This is only a reminder that
+          the words of a request are a translation, made under some pressure, of a need that is
+          usually simpler and more urgent than the words themselves: the need to trust that
+          something is real. Hearing that need, underneath the words asking for it, seems to me a
+          great deal of what good product work actually consists of. Answering it is what people
+          mean, I suspect, when they say a thing has actually shipped, as opposed to merely having
+          been built.
+        </p>
+      </div>
+    </article>
+
+    <footer class="site-footer">
+      <a href="../index.html#writing">← Writing</a>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
