@@ -357,6 +357,10 @@ article h1 {
 }
 
 .site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
   width: min(100% - 2rem, var(--wrap));
   margin: 4rem auto 0;
   padding-top: 1.5rem;
