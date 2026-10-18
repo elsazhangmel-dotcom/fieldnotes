@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The shape of ignorance — Elsa Zhang</title>
+    <meta name="description" content="Complex systems will fail. Good ones know the shape of their own ignorance, and a good error message is where trust is earned or spent." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script>
+      (() => {
+        let saved = null;
+        try {
+          saved = localStorage.getItem("elsa-theme");
+        } catch {}
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute(
+          "data-theme",
+          saved || (prefersDark ? "dark" : "light")
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="brand-group">
+        <a href="../index.html">Elsa Zhang</a>
+        <span class="sep">/</span>
+        <a class="writing-crumb" href="../index.html#writing">Writing</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="../about.html">About</a>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme"></button>
+      </div>
+    </nav>
+
+    <article class="wrap">
+      <h1>The shape of ignorance</h1>
+      <p class="post-meta">August 19, 2026 · 1 minute read</p>
+      <div class="prose">
+        <p>
+          No system of complexity is free from error, the rational response is to build systems that
+          know the shape of their own ignorance. That can say, in effect, “I do not know how to
+          proceed here” and stop.
+        </p>
+        <p>
+          It follows that the design of an error message is not a peripheral matter to be left to
+          whoever is free on a Friday afternoon, but a question with real commercial weight, since
+          it is the point at which the machine either earns the user’s trust or spends it. To tell
+          a user “an error has occurred” conveys little. It would be more honest, and more useful,
+          to perhaps show what was attempted, what went wrong, and what remains open to the user,
+          which is, after all, the same courtesy one would wish to be extended to in a foreign city,
+          lost, and asking directions of a man who speaks a different tongue.
+        </p>
+        <p>
+          Underneath the technical question sits a simple reflection: gracefully handling failure
+          may be a problem of humility on the part of the builders. It requires us to imagine, in
+          some detail and without flattering ourselves, the many ways in which we could have been
+          wrong, and to prepare a dignified reception for that eventuality.
+        </p>
+      </div>
+    </article>
+
+    <footer class="site-footer">
+      <a href="../index.html#writing">← Writing</a>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
