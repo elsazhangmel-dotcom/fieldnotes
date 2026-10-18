@@ -14,10 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/styles.css" />
     <script>
       (() => {
-        const saved = localStorage.getItem("elsa-theme");
+        let saved = null;
+        try {
+          saved = localStorage.getItem("elsa-theme");
+        } catch {}
         const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.documentElement.setAttribute(
           "data-theme",
@@ -41,11 +45,12 @@
 
     <main class="wrap">
       <p class="section-label">Latest</p>
-      <a class="latest-card" href="posts/a-walk-without-a-phone.html">
-        <h2>A walk without a phone</h2>
-        <p class="latest-meta">July 22, 2026 · 2 minute read</p>
+      <a class="latest-card" href="posts/a-few-windows-lit.html">
+        <h2>A few windows lit</h2>
+        <p class="latest-meta">October 14, 2026 · 2 minute read</p>
         <p class="latest-excerpt">
-          What changes when you leave the phone at home and walk for an hour.
+          A city at dusk holds more than anyone can take in, yet the eye goes to a few lit windows.
+          Large software may be allowed the same mercy.
           <span class="more">Keep reading →</span>
         </p>
       </a>
@@ -55,45 +60,51 @@
       <p class="section-label" id="writing">Writing</p>
       <ul class="writing-list">
         <li>
-          <a href="posts/when-perfect-meets-perfect.html">
-            <span class="date">2026 · 07</span>
-            <span class="title">When perfect meets perfect</span>
+          <a href="posts/a-few-windows-lit.html">
+            <span class="date">2026 · 10</span>
+            <span class="title">A few windows lit</span>
           </a>
         </li>
         <li>
-          <a href="posts/a-walk-without-a-phone.html">
-            <span class="date">2026 · 07</span>
-            <span class="title">A walk without a phone</span>
+          <a href="posts/friction-as-correspondence.html">
+            <span class="date">2026 · 09</span>
+            <span class="title">Friction as correspondence</span>
           </a>
         </li>
         <li>
-          <a href="posts/defaults-are-decisions.html">
-            <span class="date">2026 · 07</span>
-            <span class="title">Defaults are decisions</span>
+          <a href="posts/deciding-what-to-stop.html">
+            <span class="date">2026 · 09</span>
+            <span class="title">Deciding what to stop</span>
           </a>
         </li>
         <li>
-          <a href="posts/on-slow-mornings.html">
-            <span class="date">2026 · 07</span>
-            <span class="title">On slow mornings</span>
+          <a href="posts/the-need-under-the-request.html">
+            <span class="date">2026 · 09</span>
+            <span class="title">The need under the request</span>
           </a>
         </li>
         <li>
-          <a href="posts/shipping-the-second-version.html">
-            <span class="date">2026 · 07</span>
-            <span class="title">Shipping the second version</span>
+          <a href="posts/before-the-screen-is-shared.html">
+            <span class="date">2026 · 08</span>
+            <span class="title">Before the screen is shared</span>
           </a>
         </li>
         <li>
-          <a href="posts/one-note-a-day.html">
-            <span class="date">2026 · 07</span>
-            <span class="title">One note a day</span>
+          <a href="posts/the-shape-of-ignorance.html">
+            <span class="date">2026 · 08</span>
+            <span class="title">The shape of ignorance</span>
           </a>
         </li>
         <li>
-          <a href="posts/welcome.html">
+          <a href="posts/the-edge-of-the-friction-map.html">
             <span class="date">2026 · 07</span>
-            <span class="title">Starting points</span>
+            <span class="title">The edge of the friction map</span>
+          </a>
+        </li>
+        <li>
+          <a href="posts/worse-off-without-it.html">
+            <span class="date">2026 · 07</span>
+            <span class="title">Worse off without it</span>
           </a>
         </li>
       </ul>

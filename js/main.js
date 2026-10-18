@@ -1,7 +1,10 @@
 (() => {
   const root = document.documentElement;
   const storageKey = "elsa-theme";
-  const saved = localStorage.getItem(storageKey);
+  let saved = null;
+  try {
+    saved = localStorage.getItem(storageKey);
+  } catch {}
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const initial = saved || (prefersDark ? "dark" : "light");
 
@@ -20,7 +23,9 @@
   button.addEventListener("click", () => {
     const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
     root.setAttribute("data-theme", next);
-    localStorage.setItem(storageKey, next);
+    try {
+      localStorage.setItem(storageKey, next);
+    } catch {}
     syncLabel();
   });
 })();

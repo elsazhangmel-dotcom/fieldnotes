@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>On slow mornings — Elsa Zhang</title>
-    <meta name="description" content="A short note on protecting the first hour of the day." />
+    <title>Worse off without it — Elsa Zhang</title>
+    <meta name="description" content="A thing is useful when we are worse off without it. On enterprise data tools and why more features rarely mean more usefulness." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../css/styles.css" />
     <script>
       (() => {
-        const saved = localStorage.getItem("elsa-theme");
+        let saved = null;
+        try {
+          saved = localStorage.getItem("elsa-theme");
+        } catch {}
         const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.documentElement.setAttribute(
           "data-theme",
@@ -39,28 +43,26 @@
     </nav>
 
     <article class="wrap">
-      <h1>On slow mornings</h1>
-      <p class="post-meta">July 14, 2026 · 2 minute read</p>
+      <h1>Worse off without it</h1>
+      <p class="post-meta">July 20, 2026 · 1 minute read</p>
       <div class="prose">
         <p>
-          The first hour of the day decides more than it should. If it starts in other people’s
-          urgency, the rest of the day tends to follow.
+          A thing is useful when we are worse off without it. Feature list and horizontal expansion
+          is grand, most orgs are still facing the classical problem of data migration being
+          expensive and ineffective, all impacted domains having change fatigue, reporting changes
+          dictated by regulators with shorter and shorter implementation timelines, meanwhile there
+          exists 23.5 data tools in the org each uniquely useful at 4.25% and near impossible to
+          deprecate due to prior contract, opaque customisation by ‘Cameron that no longer works
+          here’, and distributed data ownership. The problem is far from solved.
         </p>
         <p>
-          A slow morning does not need to be luxurious. It can be coffee, a window, and ten minutes
-          without a screen. Enough space to notice what you actually want to do.
-        </p>
-        <p>
-          I have started treating that hour as a small room I refuse to rent out. Messages can wait.
-          News can wait. Even good ideas can wait until I have said hello to myself first.
+          In the reality of an enterprise machine, usefulness never linearly grows from number of
+          features, it boils down to the tool’s capacity to reduce organisational
+          complexity/friction to outcomes, or at the very least, not make it worse.
         </p>
         <blockquote>
-          <p>Protect the quiet, and the quiet will protect your attention.</p>
+          <p>The best products don’t create work, they remove it.</p>
         </blockquote>
-        <p>
-          This is not a productivity trick. It is a boundary. The day will still be full — but it
-          does not have to begin already crowded.
-        </p>
       </div>
     </article>
 

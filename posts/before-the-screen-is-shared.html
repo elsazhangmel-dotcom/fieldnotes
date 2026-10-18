@@ -3,21 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shipping the second version — Elsa Zhang</title>
-    <meta
-      name="description"
-      content="Why the second version of a product often reveals what the first was really for."
-    />
+    <title>Before the screen is shared — Elsa Zhang</title>
+    <meta name="description" content="A rehearsed demo can capably answer a question the listener isn’t asking. The useful part happens in the questions before and between screens." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../css/styles.css" />
     <script>
       (() => {
-        const saved = localStorage.getItem("elsa-theme");
+        let saved = null;
+        try {
+          saved = localStorage.getItem("elsa-theme");
+        } catch {}
         const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.documentElement.setAttribute(
           "data-theme",
@@ -42,26 +43,20 @@
     </nav>
 
     <article class="wrap">
-      <h1>Shipping the second version</h1>
-      <p class="post-meta">July 9, 2026 · 2 minute read</p>
+      <h1>Before the screen is shared</h1>
+      <p class="post-meta">August 27, 2026 · 1 minute read</p>
       <div class="prose">
         <p>
-          The first version teaches you what people do. The second version is where you decide what
-          you meant.
+          There is a mild difficulty with the fully rehearsed tour, even a well-made one: it could
+          answer, very capably, a question that this particular listener may not be asking.
         </p>
         <p>
-          Early launches are full of forgiveness: missing edges, unclear copy, temporary
-          architecture. Users fill in the gaps. That generosity disappears once the product feels
-          “real.” Suddenly every leftover compromise looks intentional.
-        </p>
-        <p>
-          So the second version should not be a longer feature list. It should be a clearer thesis.
-          Cut the paths that only existed because you were unsure. Strengthen the one path that
-          actually got used.
-        </p>
-        <p>
-          If version one asked “will anyone care?”, version two should ask “what are we willing to
-          be known for?”
+          The most useful part of a demo often happens quietly, in the questions asked before the
+          screen is shared and between one screen and the next: what is painful today, what has
+          already been tried, what would need to be true for this to matter. Something like a good
+          doctor’s examination, perhaps: brief, responsive, guided by what the last answer revealed,
+          and confident enough in what it has to offer that it need not show all of it to everyone.
+          The showing remains the point. Listening is simply how one finds out where to aim it.
         </p>
       </div>
     </article>
