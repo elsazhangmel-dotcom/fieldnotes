@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Worse off without it — Elsa Zhang</title>
+    <meta name="description" content="A thing is useful when we are worse off without it. On enterprise data tools and why more features rarely mean more usefulness." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script>
+      (() => {
+        let saved = null;
+        try {
+          saved = localStorage.getItem("elsa-theme");
+        } catch {}
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute(
+          "data-theme",
+          saved || (prefersDark ? "dark" : "light")
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="brand-group">
+        <a href="../index.html">Elsa Zhang</a>
+        <span class="sep">/</span>
+        <a class="writing-crumb" href="../index.html#writing">Writing</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="../about.html">About</a>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme"></button>
+      </div>
+    </nav>
+
+    <article class="wrap">
+      <h1>Worse off without it</h1>
+      <p class="post-meta">July 20, 2026 · 1 minute read</p>
+      <div class="prose">
+        <p>
+          A thing is useful when we are worse off without it. Feature list and horizontal expansion
+          is grand, most orgs are still facing the classical problem of data migration being
+          expensive and ineffective, all impacted domains having change fatigue, reporting changes
+          dictated by regulators with shorter and shorter implementation timelines, meanwhile there
+          exists 23.5 data tools in the org each uniquely useful at 4.25% and near impossible to
+          deprecate due to prior contract, opaque customisation by ‘Cameron that no longer works
+          here’, and distributed data ownership. The problem is far from solved.
+        </p>
+        <p>
+          In the reality of an enterprise machine, usefulness never linearly grows from number of
+          features, it boils down to the tool’s capacity to reduce organisational
+          complexity/friction to outcomes, or at the very least, not make it worse.
+        </p>
+        <blockquote>
+          <p>The best products don’t create work, they remove it.</p>
+        </blockquote>
+      </div>
+    </article>
+
+    <footer class="site-footer">
+      <a href="../index.html#writing">← Writing</a>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
