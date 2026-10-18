@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A few windows lit — Elsa Zhang</title>
+    <meta name="description" content="A city at dusk holds more than anyone can take in, yet the eye goes to a few lit windows. Large software may be allowed the same mercy." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script>
+      (() => {
+        let saved = null;
+        try {
+          saved = localStorage.getItem("elsa-theme");
+        } catch {}
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute(
+          "data-theme",
+          saved || (prefersDark ? "dark" : "light")
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="brand-group">
+        <a href="../index.html">Elsa Zhang</a>
+        <span class="sep">/</span>
+        <a class="writing-crumb" href="../index.html#writing">Writing</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="../about.html">About</a>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme"></button>
+      </div>
+    </nav>
+
+    <article class="wrap">
+      <h1>A few windows lit</h1>
+      <p class="post-meta">October 14, 2026 · 2 minute read</p>
+      <div class="prose">
+        <p>
+          A city at dusk has an almost unbearable amount of information. Rooftop after rooftop,
+          chimney after chimney, mile upon mile of grey slate going vague into a greyer sky, more
+          structure than any one person could ever account for. And yet the eyes go to the two or
+          three windows that happen to be lit, a reading lamp, a shelf of books, someone’s evening
+          carrying on behind glass. Nobody feels cheated by this, it is the most natural way of
+          taking in something too large to hold at once.
+        </p>
+        <p>
+          There are products built from an enormous number of features, each one presumably solving
+          something for somebody, but somehow leave a person feeling vaguely unheld. And there are
+          products with almost nothing to them (say three buttons) that people speak about the way
+          they speak about a person they are fond of. The second kind is not winning on austerity.
+          It is winning because every part of it that a person actually touches has been lit
+          properly.
+        </p>
+        <p>
+          In enterprise software, and especially as a data platform, this seems like a rule that
+          cannot possibly apply. It has to federate a dozen kinds of source, survive a security
+          review, satisfy an auditor who has never met the product and never will, speak politely to
+          systems that were already vintage before our thing existed. Such a thing cannot honestly
+          be three buttons. It is closer to the city than to the room, and pretending otherwise
+          would be a kind of dishonesty dressed up as elegance.
+        </p>
+        <p>
+          But I notice the word I reached for there was almost, and almost is doing nearly all the
+          work in that sentence. The city does not need to be small to be pleasant. It only needs a
+          few windows lit well. A software is perhaps permitted the same mercy as the skyline
+          permitted its miles of necessary, unglamorous structure, its configuration files nobody
+          will ever find beautiful, so long as a handful of rooms are properly lit: the first query
+          a new analyst actually runs, the one screen a customer opens before deciding whether to
+          trust the rest, the single moment where a setup either clicks cleanly into place or
+          quietly breaks. Everything else is allowed to stay roofline. It does not need to glow. It
+          only needs to hold its shape and not fall in.
+        </p>
+        <p>
+          People fall for one window they can picture themselves sitting in, with the rest of the
+          city left, gratefully, in the dark around it.
+        </p>
+      </div>
+    </article>
+
+    <footer class="site-footer">
+      <a href="../index.html#writing">← Writing</a>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
